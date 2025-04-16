@@ -1,0 +1,195 @@
+/*
+0a2239 Azul oscuro 
+1179b3 Azul claro
+fcfaf9 blanco
+*/
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Medium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Light.woff) format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin: 5px 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #FCFAF9;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #0A2239;
+}
+  
+  
+  
+  
+  
+  main {
+    flex-grow: 1;
+    background-color: black;
+    background-image: url(/student070/dwes/images/banner-motel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px 0;
+    flex-grow: 1;
+  }
+
+  main > h1 {
+    display: block;
+    color: #FCFAF9;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px;
+    text-shadow: 0 0 12px #0A2239;
+  }
+
+  main p, main li, main cite {
+    color: #FCFAF9;
+    font-family: 'Raleway';
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  main h3,   main h2{
+    color: #FCFAF9;
+    list-style: none;
+    text-shadow: 0 0 12px #0A2239;
+    font-family: 'Raleway';
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+
+  main form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  main input {
+    color: #0A2239;
+    background: #FCFAF9;
+    border: 2px solid #0A2239;
+    padding: 5px 20px;
+    max-width: fit-content;
+  }
+
+  main .input-file{
+    padding: 10px;
+    margin: auto;
+  }
+
+  main button {
+    display: block;
+    color: #FCFAF9;
+    background: #0A2239;
+    border: none;
+    padding: 5px 20px;
+    margin: 10px auto;
+  }
+
+  main select {
+    color: #FCFAF9;
+    background: #0A2239;
+    border: none;
+    padding: 5px 20px;
+    margin: 10px auto;
+    max-width: fit-content;
+  }
+
+  main label {
+    display: block;
+    text-shadow: 0 0 12px #0A2239;
+    margin: 10px;
+  }
+
+  main span{
+    display: block;
+  }
+  
+  .error{
+    color: red;
+    background-color: #FCFAF9;
+    display: inline-block;
+    max-width: fit-content;
+    margin: auto;
+  }
+  
+  
+  footer {
+    background: linear-gradient(black, #0A2239);
+    padding: 10px;
+  }
+  
+  footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  
+  footer > div:nth-child(2) {
+    justify-content:space-between;
+  }
+  
+  footer > div > ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  footer li {
+    display: inline-block;
+  }
+  
+  footer img {
+    width: 30px;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  
+  footer h3, footer a {
+    display: inline-block;
+    color: #FCFAF9;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  

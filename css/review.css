@@ -1,0 +1,46 @@
+main{
+  align-content: center;
+}
+
+label textarea{
+  height: 200px;
+  width: 300px;
+}
+
+.score {
+    width: 250px;
+    margin: 20px auto;
+    height: 50px;
+  }
+  
+  .score p {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .score label {
+    font-size: 20px;
+  }
+  
+  .score input[type="radio"] {
+    display: none;
+  }
+  
+  .score label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    unicode-bidi: bidi-override;
+  }
+  
+  .score label:hover,
+  .score label:hover ~ label {
+    color: orange;
+  }
+  
+  .score input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  

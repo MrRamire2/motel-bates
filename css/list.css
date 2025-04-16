@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Medium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Light.woff) format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+
+/* Estilo del contenedor de main */
+main {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para que el botón se coloque encima */
+  background-color: black;
+  background-image: url(/student070/dwes/images/banner-motel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items:start;
+  padding: 40px 40px;
+  flex-grow: 1;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+main > div{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.center{
+  margin: 20px auto 0;
+}
+
+/* Botón en la parte superior */
+.espacio-completo {
+  width: 100%;
+  text-align: center; /* Centrar el botón */
+  margin-bottom: 20px; /* Separación debajo del botón */
+}
+
+.espacio-completo button {
+  display: inline-block;
+  color: #FCFAF9; /* Letra blanca */
+  background: #0A2239; /* Fondo oscuro */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-family: 'Raleway', sans-serif; /* Tipografía Raleway */
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+}
+
+.espacio-completo button:hover {
+  background-color: #1179b3; /* Azul claro al pasar el cursor */
+  color: #0A2239; /* Cambiar color de texto */
+}
+
+/* Estilos para la tabla */
+table {
+  max-width: 80%;
+  width: auto;
+  border-collapse: collapse;
+  padding: 10px;
+  margin: 20px auto;
+  white-space: nowrap;
+  /* flex-grow: 1; */
+}
+
+table.center{
+  margin: 20px auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #FCFAF9;
+  font-family: 'Raleway', sans-serif;
+}
+
+th {
+  background-color: #0A2239;
+  color: #FCFAF9;
+  font-weight: bold;
+}
+
+td {
+  background-color: #0a2239be;
+  color: #FCFAF9;
+}
+
+tr:nth-child(even) {
+  background-color: #fcfaf9;
+}
+
+tr:hover {
+  background-color: #0A2239;
+  color: #1179b3;
+}
+
+.icon{
+  height: 30px;
+  margin: 0 3px;
+}
+
+/* Otros estilos */
+main h1, main h2, main h3, main p, main li, main cite {
+  color: #FCFAF9;
+  font-family: 'Raleway';
+  font-weight: normal;
+  text-decoration: none;
+}
+
+main h3, main h2, main h1 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+footer {
+  background: linear-gradient(black, #0A2239);
+  padding: 10px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+footer > div:nth-child(2) {
+  justify-content: space-between;
+}
+
+footer > div > ul {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer img {
+  width: 30px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+footer h3, footer a {
+  display: inline-block;
+  color: #FCFAF9;
+  font-family: 'Raleway';
+  font-weight: lighter;
+  font-size: 15px;
+}

@@ -1,0 +1,228 @@
+/*
+0a2239 Azul oscuro
+1179b3 Azul claro
+fcfaf9 blanco
+*/
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Medium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Light.woff) format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+
+main{
+  position: relative;
+  text-align: center;
+  background-image: url(/student070/dwes/images/banner-motel.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+main h1, main h2, main p, main li, main cite {
+  color: #FCFAF9;
+  font-family: 'Raleway';
+  font-weight: normal;
+  text-decoration: none;
+  text-shadow: 0 0 12px #0A2239;
+}
+
+main h2, main h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+main > section{
+  margin-bottom: 100px;
+  max-width: 1050px;
+}
+
+.bienvenida{
+  margin: 20dvh 0 20dvh;
+}
+
+.bienvenida h1{
+  margin: 30px;
+}
+
+
+/* temperatura */
+.temperatura{
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  top: 0px;
+  padding: 0;
+  width: 100%;
+  background-color: #f9f9fc63;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.temperatura div:last-child{
+  transform: scale(1.1);
+  align-content: center;
+}
+
+
+/* Reviews */
+.reviews{
+  display: flex;
+  flex-direction: row !important;
+  overflow:scroll;
+  scrollbar-width: none;
+  max-width: 100%;
+  margin: 0 !important;
+  gap: 20px;
+  padding: 20px;
+  box-sizing:border-box;
+}
+
+ .reviews .user-info .user-and-date{
+  justify-items: left;
+}
+
+.reviews .user-info .img-and-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.reviews .review-info{
+  font-size: smaller;
+}
+
+.reviews .user-info img{
+  margin-right: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+.reviews .container{
+  height: 230px !important;
+  width: 300px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Mapa */
+.map{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.map-content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 1000px;
+}
+
+.map canvas{
+  border-radius: 5px;
+}
+
+.map-options{
+  display: flex;
+  gap: 15px;
+}
+
+.map-options button{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  background-color: #0A2239;
+  color: #FCFAF9;
+  border: solid 1px #FCFAF9;
+  border-radius: 5px;
+}
+
+.map-options button:hover{
+  background-color: #143350;
+  transform: scale(1.01);
+}
+
+
+main > section > ul > li{
+  list-style: none;
+}
+
+.galeria img {
+  height: 300px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+
+footer {
+  background: linear-gradient(black, #0A2239);
+  padding: 10px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+footer > div:nth-child(2) {
+  justify-content:space-between;
+}
+
+footer > div > ul {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer img {
+  width: 30px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+footer h3, footer a {
+  display: inline-block;
+  color: #FCFAF9;
+  font-family: 'Raleway';
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+@media (max-width: 1050px) {
+  .map-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 95%;
+  }
+}

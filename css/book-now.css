@@ -1,0 +1,102 @@
+/*
+0a2239 Azul oscuro 
+1179b3 Azul claro
+fcfaf9 blanco
+*/
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Medium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-Light.woff) format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/student070/dwes/fonts/Raleway-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+main {
+  text-align: center;
+  background-image: url(/student070/dwes/images/banner-motel.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+main > form {
+  display: inline-block;
+  background-color: #0A2239;
+  padding: 20px 50px;
+  margin: 30vh 0;
+  border-radius: 10px;
+}
+
+main > form > input {
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+main > form > input:nth-child(6) {
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+main > form > button {
+  background-color: #fcfaf9;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+
+
+footer {
+  background: linear-gradient(black, #0A2239);
+  padding: 10px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+footer > div:nth-child(2) {
+  justify-content:space-between;
+}
+
+footer > div > ul {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer img {
+  width: 30px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+footer h3, footer a {
+  display: inline-block;
+  color: #FCFAF9;
+  font-family: 'Raleway';
+  font-weight: lighter;
+  font-size: 15px;
+}
