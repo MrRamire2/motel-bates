@@ -1,6 +1,6 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php');
-require($ROOT.'/student070/dwes/functions/reviews_format.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
+require($ROOT.'/motel-bates/functions/reviews_format.php');
 
 $sql = 'SELECT * FROM 070_reviews_view ORDER BY review_inserted_on';
 

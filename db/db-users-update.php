@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 $message = ''; // Inicializar $message
 
@@ -31,7 +31,7 @@ try {
         if (mysqli_stmt_execute($sql)) {
             $message = 'Registry updated successfully';
             if ($user_image_name != $_SESSION["login_user_image_url"]) {
-                unlink($ROOT . "/student070/dwes" . $_SESSION["login_user_image_url"]);
+                unlink($ROOT . "/motel-bates" . $_SESSION["login_user_image_url"]);
             };
         }
 

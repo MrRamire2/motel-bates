@@ -1,12 +1,12 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 
 $room_id = htmlspecialchars($_POST['room_id']);
-require($ROOT . '/student070/dwes/db/db-rooms-select-id.php');
-require($ROOT . '/student070/dwes/db/db-rooms-select-category-name.php');
-require($ROOT . '/student070/dwes/validators/validator-rooms.php');
+require($ROOT . '/motel-bates/db/db-rooms-select-id.php');
+require($ROOT . '/motel-bates/db/db-rooms-select-category-name.php');
+require($ROOT . '/motel-bates/validators/validator-rooms.php');
 
 
 
@@ -42,14 +42,14 @@ if (isset($_POST['update'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/form.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/form.css">
   <title>Rooms</title>
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <h1>Update room</h1>
@@ -95,7 +95,7 @@ if (isset($_POST['update'])) {
   </main>
 
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

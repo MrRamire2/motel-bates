@@ -1,6 +1,6 @@
 <?php 
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
 
 // Para imprimir el email y la password ingresada en el formulario
 if (isset($_POST['submit'])) {
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
             session_write_close();
 
             // Redirigir después de la verificación
-            header('Location: /student070/dwes/index.php');
+            header('Location: /motel-bates/index.php');
             exit();
           } else {
             $message = 'Usuario o contraseña incorrectos.';

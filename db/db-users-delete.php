@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 try {
     // Verificar si se ha solicitado eliminar (por POST o GET) y si existe el user_id

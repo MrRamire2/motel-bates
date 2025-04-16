@@ -53,7 +53,7 @@ function showRoom(str) {
                 document.getElementById("textHint").innerHTML = format;
             }
         };
-        xmlhttp.open("GET", "/student070/dwes/db/ajax-db-rooms-select.php?q=" + str, true);
+        xmlhttp.open("GET", "/motel-bates/db/ajax-db-rooms-select.php?q=" + str, true);
         xmlhttp.send();
     }
 }

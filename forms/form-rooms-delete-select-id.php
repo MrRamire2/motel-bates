@@ -1,9 +1,9 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 
-require($ROOT.'/student070/dwes/db/db-rooms-select.php');
+require($ROOT.'/motel-bates/db/db-rooms-select.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,18 +12,18 @@ require($ROOT.'/student070/dwes/db/db-rooms-select.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/form.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/form.css">
     <title>Rooms</title>
 </head>
 
 <body>
 
-    <?php require($ROOT.'/student070/dwes/header.php'); ?>
+    <?php require($ROOT.'/motel-bates/header.php'); ?>
 
     <main>
         <h1>Delete room</h1>
-        <form action="/student070/dwes/confirmations/confirmation-rooms-delete.php" name="delete" method="POST">
+        <form action="/motel-bates/confirmations/confirmation-rooms-delete.php" name="delete" method="POST">
             <label for="room_id">Room number</label>
             <select name="room_id" id="room_id">
                 <?php foreach ($rooms as $room) { ?>
@@ -39,7 +39,7 @@ require($ROOT.'/student070/dwes/db/db-rooms-select.php');
         <?php endif; ?>
     </main>
 
-    <?php require($ROOT.'/student070/dwes/footer.php'); ?>
+    <?php require($ROOT.'/motel-bates/footer.php'); ?>
 
 </body>
 </html>

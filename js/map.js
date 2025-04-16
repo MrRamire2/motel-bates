@@ -16,7 +16,7 @@ const map = new mapboxgl.Map({
 });
 
 // Añadir marcador para el hotel
-createCustomMarker('/student070/dwes/images/pingMap.png').setLngLat(hotelCoords).addTo(map);
+createCustomMarker('/motel-bates/images/pingMap.png').setLngLat(hotelCoords).addTo(map);
 let destinationMarker = null;
 
 // Función para eliminar la ruta y el marcador de destino anterior

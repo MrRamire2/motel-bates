@@ -16,7 +16,7 @@ echo '  <div class="container">';
 
 echo '      <div class="user-info">
                 <div class="img-and-info">
-                    <img src="/student070/dwes' . $review["user_image_url"] . '"/>
+                    <img src="/motel-bates' . $review["user_image_url"] . '"/>
                     <div class="user-and-date">
                         <h4>' . $review["user_forename"] . ' ' . $review["user_surname"] . '</h4>
                         <h5>' . $review["review_inserted_on"] . '</h5>
@@ -25,11 +25,11 @@ echo '      <div class="user-info">
 
 if ($admin) {
     echo '      <div class="icons">
-                    <a href="/student070/dwes/db/db-reviews-update-state.php?user_id=' . $review["user_id"] . '&room_category_id=' . $review["room_category_id"] . '">
-                        <img class="icon" src="/student070/dwes/images/add.png">
+                    <a href="/motel-bates/db/db-reviews-update-state.php?user_id=' . $review["user_id"] . '&room_category_id=' . $review["room_category_id"] . '">
+                        <img class="icon" src="/motel-bates/images/add.png">
                     </a>
-                    <a href="/student070/dwes/db/db-reviews-delete.php?user_id=' . $review["user_id"] . '&room_category_id=' . $review["room_category_id"] . '">
-                        <img class="icon" src="/student070/dwes/images/borrar.png">
+                    <a href="/motel-bates/db/db-reviews-delete.php?user_id=' . $review["user_id"] . '&room_category_id=' . $review["room_category_id"] . '">
+                        <img class="icon" src="/motel-bates/images/borrar.png">
                     </a>
                 </div>';
 }

@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
 
 // Verificar si se recibió un ID de cliente por POST
 if (isset($_GET['user_id']) || isset($_POST['user_id']) || isset($_SESSION['user_id']) || isset($_SESSION['login_user_id'])) {

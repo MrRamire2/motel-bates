@@ -1,14 +1,14 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_guest_to_login.php');
 
 // Obtener los valores del SESSION
 $date_in = $_SESSION['date_in'];
 $date_out = $_SESSION['date_out'];
 $capacity = $_SESSION['capacity'];
-require($ROOT . '/student070/dwes/db/db-reservations-select-available-rooms.php');
-require($ROOT . '/student070/dwes/db/db-rooms-select-ids.php');
+require($ROOT . '/motel-bates/db/db-reservations-select-available-rooms.php');
+require($ROOT . '/motel-bates/db/db-rooms-select-ids.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,21 +17,21 @@ require($ROOT . '/student070/dwes/db/db-rooms-select-ids.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/boxes.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/boxes.css">
     <title>Available rooms</title>
 </head>
 
 <body>
 
-    <?php require($ROOT . '/student070/dwes/header.php'); ?>
+    <?php require($ROOT . '/motel-bates/header.php'); ?>
 
     <main>
 
         <?php if (!empty($all_details)): ?>
             <?php foreach ($all_details as $room): ?>
                 <div>
-                    <form action="/student070/dwes/pages/reservations-insert-preview.php" method="post">
+                    <form action="/motel-bates/pages/reservations-insert-preview.php" method="post">
                         <!-- Campos ocultos -->
                         <input type="hidden" id="room_id" name="room_id" value="<?php echo htmlspecialchars($room['room_id']); ?>">
                         <ul>
@@ -56,7 +56,7 @@ require($ROOT . '/student070/dwes/db/db-rooms-select-ids.php');
 
     </main>
 
-    <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+    <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

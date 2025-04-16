@@ -1,6 +1,6 @@
 <?php
-include($ROOT . '/student070/dwes/db/db-rooms-select-category-name.php');
-require($ROOT.'/student070/dwes/stable/db-connect.php');
+include($ROOT . '/motel-bates/db/db-rooms-select-category-name.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
 
 // Variable para acumular todas las habitaciones disponibles
 $all_rooms = [];

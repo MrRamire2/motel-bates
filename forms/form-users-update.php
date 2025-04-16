@@ -1,12 +1,12 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_guest_to_login.php');
 
-require($ROOT . '/student070/dwes/db/db-users-select-id.php');
-require($ROOT . '/student070/dwes/validators/validator-users.php');
-require($ROOT . '/student070/dwes/functions/personalized_name_gen.php');
-require($ROOT . '/student070/dwes/functions/save_resized_image.php');
+require($ROOT . '/motel-bates/db/db-users-select-id.php');
+require($ROOT . '/motel-bates/validators/validator-users.php');
+require($ROOT . '/motel-bates/functions/personalized_name_gen.php');
+require($ROOT . '/motel-bates/functions/save_resized_image.php');
 
 
 $forename = $surname = $nif = $email = $phone = $password = $birthday = '';
@@ -34,7 +34,7 @@ if (isset($_POST['update'])) {
     if (isset($_FILES['profile_picture']) && $_FILES['profile_picture']['error'] === UPLOAD_ERR_OK) {
 
       $user_image_name = personalized_name_gen($_SESSION['user_forename'], $_SESSION['user_surname']);
-      $path_to_save_with_name = $ROOT . "/student070/dwes" . $user_image_name;
+      $path_to_save_with_name = $ROOT . "/motel-bates" . $user_image_name;
 
       $image_path = $_FILES['profile_picture']['tmp_name'];
 
@@ -62,14 +62,14 @@ if (isset($_POST['update'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/form.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/form.css">
   <title>Update user</title>
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
 
@@ -136,7 +136,7 @@ if (isset($_POST['update'])) {
     </form>
   </main>
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

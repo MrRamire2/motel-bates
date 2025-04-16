@@ -5,7 +5,7 @@ $user_id = $_POST['userId'];
 // echo $user_id;
 
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 $sql = "SELECT user_forename, user_surname, user_nif FROM `070_users` WHERE user_id = $user_id";
 $result = mysqli_query($conn, $sql);

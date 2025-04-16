@@ -1,9 +1,9 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_to_login.php');
 
-include($ROOT . '/student070/dwes/validators/validator-users.php');
+include($ROOT . '/motel-bates/validators/validator-users.php');
 
 
 
@@ -47,14 +47,14 @@ if (isset($_POST['submit'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/form.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/form.css">
   <title>customers</title>
 </head>
 
 <body>
 
-  <?php include($ROOT . '/student070/dwes/header.php'); ?>
+  <?php include($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <h1>Insert customer</h1>
@@ -108,13 +108,13 @@ if (isset($_POST['submit'])) {
 
     </form>
     <div>
-      <a href="/student070/dwes/pages/login.php">or login</a>
+      <a href="/motel-bates/pages/login.php">or login</a>
     </div>
 
 
   </main>
 
-  <?php include($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php include($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

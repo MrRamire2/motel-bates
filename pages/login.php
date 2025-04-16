@@ -1,10 +1,10 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_admin_customer_to_index.php');
+require($ROOT . '/motel-bates/validators/redirect_admin_customer_to_index.php');
 
 $message = '';
-require($ROOT.'/student070/dwes/db/db-users-verify.php');
+require($ROOT.'/motel-bates/db/db-users-verify.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,14 +13,14 @@ require($ROOT.'/student070/dwes/db/db-users-verify.php');
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/login.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/login.css">
     <title>Login</title>
   </head>
 
   <body>
 
-  <?php include($ROOT.'/student070/dwes/header.php'); ?>
+  <?php include($ROOT.'/motel-bates/header.php'); ?>
 
     <main>
       <div>
@@ -40,12 +40,12 @@ require($ROOT.'/student070/dwes/db/db-users-verify.php');
 
         </form>
         <div>
-          <a href="/student070/dwes/forms/form-users-insert.php">or register</a>
+          <a href="/motel-bates/forms/form-users-insert.php">or register</a>
         </div>
       </div>  
     </main>
 
-    <?php include($ROOT.'/student070/dwes/footer.php'); ?>
+    <?php include($ROOT.'/motel-bates/footer.php'); ?>
 
   </body>
 </html>

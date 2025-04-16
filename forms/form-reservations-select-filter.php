@@ -1,7 +1,7 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_guest_to_login.php');
 ?>
 
 
@@ -11,19 +11,19 @@ require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/form.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/form.css">
     <title>Update resevation</title>
   </head>
 
   <body>
 
-    <?php require($ROOT.'/student070/dwes/header.php'); ?>
+    <?php require($ROOT.'/motel-bates/header.php'); ?>
 
     <main>
       <h1>Filter reservations</h1>
       <h2>you can leave the spaces blank to see all users</h2>
-      <form action="/student070/dwes/pages/reservations.php" name="reservations" method="POST">
+      <form action="/motel-bates/pages/reservations.php" name="reservations" method="POST">
 
         <label>
           <span>reservation ID</span>
@@ -61,7 +61,7 @@ require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
       </form>
     </main>
 
-    <?php require($ROOT.'/student070/dwes/footer.php'); ?>
+    <?php require($ROOT.'/motel-bates/footer.php'); ?>
 
   </body>
 </html>

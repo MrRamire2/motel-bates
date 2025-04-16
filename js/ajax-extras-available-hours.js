@@ -34,7 +34,7 @@ function GetData() {
             }
         };
 
-        let url = "/student070/dwes/db/ajax-db-services-select-unavailable-hours.php" +
+        let url = "/motel-bates/db/ajax-db-services-select-unavailable-hours.php" +
             "?personsQuantity=" + encodeURIComponent(personsQuantity.value) +
             "&serviceId=" + encodeURIComponent(serviceId.value) +
             "&date=" + encodeURIComponent(date.value);

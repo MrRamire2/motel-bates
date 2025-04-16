@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
 
 // Verificar si se recibió un ID
 if (isset($room_id)) {

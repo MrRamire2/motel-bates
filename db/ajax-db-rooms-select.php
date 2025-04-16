@@ -2,7 +2,7 @@
 $q = htmlspecialchars($_GET['q']);
 
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
 
 $sql = "SELECT * FROM 070_rooms_view WHERE CONCAT(room_number, room_category_name) LIKE '%$q%' ORDER BY room_status DESC";
 

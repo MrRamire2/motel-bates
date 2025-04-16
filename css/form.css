@@ -7,21 +7,21 @@ fcfaf9 blanco
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/student070/dwes/fonts/Raleway-Medium.woff) format('woff');
+  src: url(/motel-bates/fonts/Raleway-Medium.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/student070/dwes/fonts/Raleway-Light.woff) format('woff');
+  src: url(/motel-bates/fonts/Raleway-Light.woff) format('woff');
   font-weight: lighter;
   font-style: lighter;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/student070/dwes/fonts/Raleway-bold.woff) format('woff');
+  src: url(/motel-bates/fonts/Raleway-bold.woff) format('woff');
   font-weight: bold;
   font-style: bold;
 }
@@ -62,7 +62,7 @@ fcfaf9 blanco
   main {
     flex-grow: 1;
     background-color: black;
-    background-image: url(/student070/dwes/images/banner-motel.jpg);
+    background-image: url(/motel-bates/images/banner-motel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;

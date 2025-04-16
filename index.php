@@ -1,6 +1,6 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT']; 
-require($ROOT.'/student070/dwes/db/db-apis-select.php');
-require($ROOT.'/student070/dwes/db/db-reviews-select.php');
+require($ROOT.'/motel-bates/db/db-apis-select.php');
+require($ROOT.'/motel-bates/db/db-reviews-select.php');
 
 session_start();
 ?>
@@ -11,9 +11,9 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/style.css">
-    <link rel="stylesheet" href="/student070/dwes/css/reviews.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/style.css">
+    <link rel="stylesheet" href="/motel-bates/css/reviews.css">
 
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
@@ -23,7 +23,7 @@ session_start();
 
 <body>
 
-    <?php require($ROOT . '/student070/dwes/header.php'); ?>
+    <?php require($ROOT . '/motel-bates/header.php'); ?>
 
     <main>
 
@@ -63,9 +63,9 @@ session_start();
     <section id="galeria">
         <h2>Image Gallery</h2>
         <div class="galeria">
-            <img src="/student070/dwes/images/entrada.png" alt="Exterior of Bates Motel">
-            <img src="/student070/dwes/images/mesa.png" alt="Common Area of Bates Motel">
-            <img src="/student070/dwes/images/recepcion.png" alt="Pool at Bates Motel">
+            <img src="/motel-bates/images/entrada.png" alt="Exterior of Bates Motel">
+            <img src="/motel-bates/images/mesa.png" alt="Common Area of Bates Motel">
+            <img src="/motel-bates/images/recepcion.png" alt="Pool at Bates Motel">
         </div>
     </section>
 
@@ -81,8 +81,8 @@ session_start();
 
 </main>
 
-    <?php require($ROOT . '/student070/dwes/footer.php'); ?>
-    <script src="/student070/dwes/js/map.js"></script>
+    <?php require($ROOT . '/motel-bates/footer.php'); ?>
+    <script src="/motel-bates/js/map.js"></script>
 
 </body>
 

@@ -1,11 +1,11 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_guest_to_login.php');
 
 $room_id = htmlspecialchars($_POST['room_id']);
-require($ROOT . '/student070/dwes/db/db-rooms-select-id.php');
-require($ROOT . '/student070/dwes/db/db-users-select-id.php');
+require($ROOT . '/motel-bates/db/db-rooms-select-id.php');
+require($ROOT . '/motel-bates/db/db-users-select-id.php');
 
 // Verifica si el formulario fue enviado
 if (isset($_POST['submit'])) {
@@ -24,17 +24,17 @@ $days = $date_in->diff($date_out)->days;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/form.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/form.css">
     <title>Reservations</title>
 </head>
 
 <body>
-    <?php require($ROOT . '/student070/dwes/header.php'); ?>
+    <?php require($ROOT . '/motel-bates/header.php'); ?>
 
     <main>
         <h1>Reservation Preview</h1>
-        <form action="/student070/dwes/confirmations/confirmation-reservations-insert.php" method="POST">
+        <form action="/motel-bates/confirmations/confirmation-reservations-insert.php" method="POST">
             <ul>
                 <li>
                     <h2>Full name</h2>
@@ -65,6 +65,6 @@ $days = $date_in->diff($date_out)->days;
             </ul>
         </form>
     </main>
-    <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+    <?php require($ROOT . '/motel-bates/footer.php'); ?>
 </body>
 </html>

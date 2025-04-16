@@ -1,7 +1,7 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-// require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+// require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,20 +9,20 @@ session_start();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/form.css">
-  <link rel="stylesheet" href="/student070/dwes/css/review.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/form.css">
+  <link rel="stylesheet" href="/motel-bates/css/review.css">
   <title>Add extras</title>
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <h1>Add review</h1>
 
-    <form action="/student070/dwes/confirmations/confirmation-reviews-insert.php" name="add" method="POST">
+    <form action="/motel-bates/confirmations/confirmation-reviews-insert.php" name="add" method="POST">
 
       <input type="hidden" id="user_id" name="user_id" value="<?php echo $_GET["user_id"] ?>">
       <input type="hidden" id="room_category_id" name="room_category_id" value="<?php echo $_GET["room_category_id"] ?>">
@@ -52,7 +52,7 @@ session_start();
     </form>
   </main>
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 </body>
 
 </html>

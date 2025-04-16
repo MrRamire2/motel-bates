@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 try {
     // Captura los datos del formulario
@@ -32,7 +32,7 @@ try {
 
             // Ejecutar la consulta
             if (mysqli_stmt_execute($stmt)) {
-                header("Location:/student070/dwes/confirmations/confirmation-extras-add.php");
+                header("Location:/motel-bates/confirmations/confirmation-extras-add.php");
                 $_SESSION["extra_message"] = 'Extra registered';
             } else {
                 // Captura cualquier error si la consulta no se ejecuta

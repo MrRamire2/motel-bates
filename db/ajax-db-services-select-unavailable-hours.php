@@ -4,7 +4,7 @@ $persons_quantity = htmlspecialchars($_GET['personsQuantity']);
 $date = htmlspecialchars($_GET['date']);
 
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 
 

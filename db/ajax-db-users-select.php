@@ -2,7 +2,7 @@
 $q = htmlspecialchars($_GET['q']);
 
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php');
+require($ROOT.'/motel-bates/stable/db-connect.php');
 
 //consulta
 $sql = "SELECT * FROM 070_users_view WHERE user_status = 'active' AND CONCAT(user_forename, user_surname, user_email, user_nif) LIKE '%$q%'";
@@ -36,19 +36,19 @@ echo "<table class='reservations-table'>
         echo "<td>" . $row['user_birthday'] . "</td>";
 
         echo "<td>";
-        echo "<a href='/student070/dwes/forms/form-users-update.php?user_id=" . $row['user_id'] . "'>";
-        echo "<img class='icon' src='/student070/dwes/images/editar.png'>";
+        echo "<a href='/motel-bates/forms/form-users-update.php?user_id=" . $row['user_id'] . "'>";
+        echo "<img class='icon' src='/motel-bates/images/editar.png'>";
         echo "</a>";
 
         echo "</a>";
-        echo "<a href='/student070/dwes/confirmations/confirmation-users-delete.php?user_id=" . $row['user_id'] . "'";
+        echo "<a href='/motel-bates/confirmations/confirmation-users-delete.php?user_id=" . $row['user_id'] . "'";
         echo " onclick='return confirm(\"" . $confirm . "\");'>";
-        echo "<img class='icon' src='/student070/dwes/images/borrar.png'>";
+        echo "<img class='icon' src='/motel-bates/images/borrar.png'>";
         echo "</a>";
 
         // echo "</a>";
-        // echo "<a href='/student070/dwes/forms/form-extras-add.php?user_id=" . $row['user_id'] . "'>";
-        // echo "<img class='icon' src='/student070/dwes/images/add-extras.png'>";
+        // echo "<a href='/motel-bates/forms/form-extras-add.php?user_id=" . $row['user_id'] . "'>";
+        // echo "<img class='icon' src='/motel-bates/images/add-extras.png'>";
         // echo "</a>";
 
         echo "</td>";

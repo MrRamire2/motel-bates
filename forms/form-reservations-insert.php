@@ -2,9 +2,9 @@
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_guest_to_login.php');
-require($ROOT . '/student070/dwes/db/db-users-select.php');
-require($ROOT . '/student070/dwes/validators/validator-reservations.php');
+require($ROOT . '/motel-bates/validators/redirect_guest_to_login.php');
+require($ROOT . '/motel-bates/db/db-users-select.php');
+require($ROOT . '/motel-bates/validators/validator-reservations.php');
 
 // Inicializar variables de los campos
 $date_in = isset($_COOKIE['date_in']) ? $_COOKIE['date_in'] : '';
@@ -70,13 +70,13 @@ if ($_SESSION["login_user_rol"] === "admin" || $_SESSION["login_user_rol"] === "
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/form.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/form.css">
     <title>Book now</title>
 </head>
 <body>
 
-<?php require($ROOT . '/student070/dwes/header.php'); ?>
+<?php require($ROOT . '/motel-bates/header.php'); ?>
 
 <main>
     <h1>Insert reservation</h1>
@@ -124,14 +124,14 @@ if ($_SESSION["login_user_rol"] === "admin" || $_SESSION["login_user_rol"] === "
     </form>
 </main>
 
-<?php require($ROOT . '/student070/dwes/footer.php'); ?>
+<?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 </html>
 
 <?php
 } else {
-    require($ROOT . '/student070/dwes/pages/login.php');
+    require($ROOT . '/motel-bates/pages/login.php');
 }
 ?>
 

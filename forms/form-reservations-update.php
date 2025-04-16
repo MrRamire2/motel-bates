@@ -1,18 +1,18 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 
-include($ROOT.'/student070/dwes/db/db-reservations-select-id.php');
-include($ROOT.'/student070/dwes/db/db-users-select.php');
+include($ROOT.'/motel-bates/db/db-reservations-select-id.php');
+include($ROOT.'/motel-bates/db/db-users-select.php');
 
 $room_id = htmlspecialchars($reservations[0]['room_id']);
-include($ROOT.'/student070/dwes/db/db-rooms-select-id.php');
+include($ROOT.'/motel-bates/db/db-rooms-select-id.php');
 
 $date_in = htmlspecialchars($reservations[0]['date_in']);
 $date_out = htmlspecialchars($reservations[0]['date_out']);
 $capacity = htmlspecialchars($rooms[0]['capacity']);
-include($ROOT.'/student070/dwes/db/db-reservations-select-available-rooms-to-update.php');
+include($ROOT.'/motel-bates/db/db-reservations-select-available-rooms-to-update.php');
 ?>
 
 <!DOCTYPE html>
@@ -21,19 +21,19 @@ include($ROOT.'/student070/dwes/db/db-reservations-select-available-rooms-to-upd
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/form.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/form.css">
     <title>Update reservation</title>
   </head>
 
   <body>
 
-    <?php require($ROOT.'/student070/dwes/header.php'); ?>
+    <?php require($ROOT.'/motel-bates/header.php'); ?>
 
     <main>
       <h1>Update reservation</h1>
 
-      <form action="/student070/dwes/confirmations/confirmation-reservations-update.php" name="update" method="POST">
+      <form action="/motel-bates/confirmations/confirmation-reservations-update.php" name="update" method="POST">
 
       <!-- Campo oculto para el reservation_id -->
       <input type="hidden" id="reservation_id" name="reservation_id" value="<?php echo htmlspecialchars($reservations[0]['reservation_id']); ?>">
@@ -89,7 +89,7 @@ include($ROOT.'/student070/dwes/db/db-reservations-select-available-rooms-to-upd
       </form>
     </main>
 
-    <?php require($ROOT.'/student070/dwes/footer.php'); ?>
+    <?php require($ROOT.'/motel-bates/footer.php'); ?>
 
   </body>
 </html>

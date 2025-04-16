@@ -1,7 +1,7 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/db/db-users-select-id.php');
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/db/db-users-select-id.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 $message = ''; // Inicializar $message
 

@@ -1,10 +1,10 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 
-require($ROOT . '/student070/dwes/db/db-employees-positions-select.php');
-require($ROOT . '/student070/dwes/db/db-users-select.php');
+require($ROOT . '/motel-bates/db/db-employees-positions-select.php');
+require($ROOT . '/motel-bates/db/db-users-select.php');
 
 ?>
 <!DOCTYPE html>
@@ -13,18 +13,18 @@ require($ROOT . '/student070/dwes/db/db-users-select.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/form.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/form.css">
   <title>Employee</title>
 </head>
 
 <body>
 
-  <?php include($ROOT . '/student070/dwes/header.php'); ?>
+  <?php include($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <h1>Insert employee</h1>
-    <form action="/student070/dwes/confirmations/confirmation-employees-insert.php" name="register" method="POST">
+    <form action="/motel-bates/confirmations/confirmation-employees-insert.php" name="register" method="POST">
 
       <!--USER ID-->
       
@@ -61,13 +61,13 @@ require($ROOT . '/student070/dwes/db/db-users-select.php');
 
     </form>
     <div>
-      <a href="/student070/dwes/pages/login.php">or login</a>
+      <a href="/motel-bates/pages/login.php">or login</a>
     </div>
 
 
   </main>
 
-  <?php include($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php include($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

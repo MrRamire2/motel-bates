@@ -1,12 +1,12 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 
-include($ROOT . '/student070/dwes/db/db-reservations-select-id.php');
+include($ROOT . '/motel-bates/db/db-reservations-select-id.php');
 
 $reservation_id = $_GET["reservation_id"];
-include($ROOT . '/student070/dwes/db/db-reservations-services-select-id.php');
+include($ROOT . '/motel-bates/db/db-reservations-services-select-id.php');
 
 $extras = $reservations_services;
 $extras_total_price = 0;
@@ -18,20 +18,20 @@ $extras_total_price = 0;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/boxes.css">
-  <link rel="stylesheet" href="/student070/dwes/css/list.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/boxes.css">
+  <link rel="stylesheet" href="/motel-bates/css/list.css">
   <title>See extras</title>
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main class="row">
 
     <div class="espacio-completo">
-      <button onclick="window.location.href='/student070/dwes/forms/form-reservations-select-filter.php'">Go to filters</button>
+      <button onclick="window.location.href='/motel-bates/forms/form-reservations-select-filter.php'">Go to filters</button>
     </div>
 
     <div class="invoice-container">
@@ -109,7 +109,7 @@ $extras_total_price = 0;
     </div>
   </main>
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

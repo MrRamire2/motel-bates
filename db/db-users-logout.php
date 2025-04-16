@@ -2,6 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
-header('Location: /student070/dwes/index.php');
+header('Location: /motel-bates/index.php');
 exit();
 ?>

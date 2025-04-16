@@ -1,9 +1,9 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
 
-require($ROOT . '/student070/dwes/db/db-employees-select.php');
+require($ROOT . '/motel-bates/db/db-employees-select.php');
 ?>
 
 
@@ -13,15 +13,15 @@ require($ROOT . '/student070/dwes/db/db-employees-select.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/form.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/form.css">
   <title>employee</title>
 
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <h1>Update employee</h1>
@@ -39,7 +39,7 @@ require($ROOT . '/student070/dwes/db/db-employees-select.php');
     </form>
   </main>
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 

@@ -5,8 +5,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/student070/dwes/css/header.css">
-    <link rel="stylesheet" href="/student070/dwes/css/views.css">
+    <link rel="stylesheet" href="/motel-bates/css/header.css">
+    <link rel="stylesheet" href="/motel-bates/css/views.css">
     <title>Rooms</title>
   </head>
 
@@ -14,14 +14,14 @@
 
   <?php     
     session_start();
-    require($ROOT.'/student070/dwes/header.php'); ?>
+    require($ROOT.'/motel-bates/header.php'); ?>
 
 <main>
         <div class="room">
             <h2>Suite</h2>
-            <img class="img-room" src="/student070/dwes/images/rooms/suite.jpg">
+            <img class="img-room" src="/motel-bates/images/rooms/suite.jpg">
             <p>Experience luxury with our spacious suites featuring premium amenities and breathtaking views.</p>
-            <img class="img-more open" src="/student070/dwes/images/cerrar.png">
+            <img class="img-more open" src="/motel-bates/images/cerrar.png">
             <ul class="info hidden">
                 <li>Free high-speed Wi-Fi</li>
                 <li>Private jacuzzi</li>
@@ -33,9 +33,9 @@
         </div>
         <div class="room">
             <h2>Double Room</h2>
-            <img class="img-room" src="/student070/dwes/images/rooms/double.jpg">
+            <img class="img-room" src="/motel-bates/images/rooms/double.jpg">
             <p>Perfect for couples or small families, our double rooms offer comfort and convenience.</p>
-            <img class="img-more open" src="/student070/dwes/images/cerrar.png">
+            <img class="img-more open" src="/motel-bates/images/cerrar.png">
             <ul class="info hidden">
                 <li>Free Wi-Fi</li>
                 <li>Private bathroom with shower</li>
@@ -46,9 +46,9 @@
         </div>
         <div class="room">
             <h2>Simple Room</h2>
-            <img class="img-room" src="/student070/dwes/images/rooms/simple.jpg">
+            <img class="img-room" src="/motel-bates/images/rooms/simple.jpg">
             <p>Cozy and affordable, ideal for solo travelers looking for a restful stay.</p>
-            <img class="img-more open" src="/student070/dwes/images/cerrar.png">
+            <img class="img-more open" src="/motel-bates/images/cerrar.png">
             <ul class="info hidden">
                 <li>Free Wi-Fi</li>
                 <li>Ensuite bathroom</li>
@@ -59,8 +59,8 @@
         </div>
     </main>
 
-    <?php require($ROOT.'/student070/dwes/footer.php'); ?>
-    <script src="/student070/dwes/js/img-transform.js"></script>
+    <?php require($ROOT.'/motel-bates/footer.php'); ?>
+    <script src="/motel-bates/js/img-transform.js"></script>
     
   </body>
 </html>

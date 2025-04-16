@@ -2,8 +2,8 @@
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-require($ROOT . '/student070/dwes/validators/redirect_customer_guest_to_login.php');
-require($ROOT.'/student070/dwes/db/db-reviews-select.php');
+require($ROOT . '/motel-bates/validators/redirect_customer_guest_to_login.php');
+require($ROOT.'/motel-bates/db/db-reviews-select.php');
 ?>
 
 
@@ -13,15 +13,15 @@ require($ROOT.'/student070/dwes/db/db-reviews-select.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/list.css">
-  <link rel="stylesheet" href="/student070/dwes/css/reviews.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/list.css">
+  <link rel="stylesheet" href="/motel-bates/css/reviews.css">
   <title>users</title>
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <h2>Customer Reviews</h2>
@@ -36,12 +36,12 @@ require($ROOT.'/student070/dwes/db/db-reviews-select.php');
         </section>
   </main>
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 
 
-<script src="/student070/dwes/js/ajax-search-user.js"></script>
+<script src="/motel-bates/js/ajax-search-user.js"></script>
 
 
 </html>

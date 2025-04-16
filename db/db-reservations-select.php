@@ -1,5 +1,5 @@
 <?php $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT.'/student070/dwes/stable/db-connect.php'); 
+require($ROOT.'/motel-bates/stable/db-connect.php'); 
 
 //que se busque a cualquier tipo de usuario solo si es admin
 if ($_SESSION["login_user_rol"] === "admin") {
@@ -9,7 +9,7 @@ if ($_SESSION["login_user_rol"] === "admin") {
     $user_id =  ' AND user_id = ' . htmlspecialchars($_SESSION["login_user_id"]);
     //que mande al usuario al login si este no es niguno de los otros dos
 } else {
-    header('Location:/student070/dwes/pages/login.php');
+    header('Location:/motel-bates/pages/login.php');
     die();
 };
 

@@ -1,7 +1,7 @@
 <?php
 
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 $sql = 'SELECT SUM(price_per_day) AS total_generated, count(*) AS customers,  DATE_ADD(CURRENT_DATE(), INTERVAL -3 MONTH) AS start_date, CURRENT_DATE() AS end_date
 FROM 070_reservations
@@ -24,14 +24,3 @@ fwrite($handle, "QUARTER DATA: " . $quarterData[0]['start_date'] . " " . $quarte
 mysqli_free_result($result);
 
 mysqli_close($conn);
-
-
-
-SELECT SUM(price_per_day) AS total_generated, count(*) AS customers, SUM(JSON_EXTRACT(extras_json, '$.gym.'))  DATE_ADD(CURRENT_DATE(), INTERVAL -3 MONTH) AS start_date, CURRENT_DATE() AS end_date
-FROM 070_reservations
-WHERE date_out BETWEEN DATE_ADD(CURRENT_DATE(), INTERVAL -3 MONTH) AND CURRENT_DATE();
-
-
-
-
-SELECT JSON_EXTRACT(extras_json, '$.gym.*.ticket_subtotal') FROM `070_reservations`

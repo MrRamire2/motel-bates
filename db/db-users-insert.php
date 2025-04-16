@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 $message = ''; // Inicializar $message
 
@@ -25,7 +25,7 @@ try {
         // Ejecutar la consulta
         if (mysqli_stmt_execute($sql)) {
             $message = 'New user inserted successfully.';
-            // require($ROOT . '/student070/dwes/db/db-users-select.php');
+            // require($ROOT . '/motel-bates/db/db-users-select.php');
             // foreach($users as $user){
             //     if($user['user_email'] = $_SESSION['email']){
             //         $user_id = $user['user_id'];

@@ -8,7 +8,7 @@ function showUser(str) {
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "/student070/dwes/db/ajax-db-users-select.php?q=" + str, true);
+        xmlhttp.open("GET", "/motel-bates/db/ajax-db-users-select.php?q=" + str, true);
         xmlhttp.send();
     }
 };

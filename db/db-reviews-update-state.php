@@ -1,6 +1,6 @@
 <?php
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
-require($ROOT . '/student070/dwes/stable/db-connect.php');
+require($ROOT . '/motel-bates/stable/db-connect.php');
 
 try {
     $user_id = htmlspecialchars($_GET['user_id']);
@@ -19,4 +19,4 @@ try {
 } catch (mysqli_sql_exception $e) {
     $message = 'Error: ' . $e->getMessage();
 }
-header('Location: /student070/dwes/pages/reviews.php');
+header('Location: /motel-bates/pages/reviews.php');

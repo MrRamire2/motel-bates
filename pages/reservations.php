@@ -2,8 +2,8 @@
 $ROOT = $_SERVER['DOCUMENT_ROOT'];
 session_start();
 
-include($ROOT . '/student070/dwes/db/db-reservations-select.php');
-include($ROOT . '/student070/dwes/functions/reservation_table_format.php');
+include($ROOT . '/motel-bates/db/db-reservations-select.php');
+include($ROOT . '/motel-bates/functions/reservation_table_format.php');
 ?>
 
 
@@ -13,20 +13,20 @@ include($ROOT . '/student070/dwes/functions/reservation_table_format.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/student070/dwes/css/header.css">
-  <link rel="stylesheet" href="/student070/dwes/css/list.css">
+  <link rel="stylesheet" href="/motel-bates/css/header.css">
+  <link rel="stylesheet" href="/motel-bates/css/list.css">
   <title>Reservations</title>
 </head>
 
 <body>
 
-  <?php require($ROOT . '/student070/dwes/header.php'); ?>
+  <?php require($ROOT . '/motel-bates/header.php'); ?>
 
   <main>
     <?php if ($_SESSION["login_user_rol"] === "admin") { ?>
       <!-- Tabla de reservas admin-->
       <div class="espacio-completo">
-        <button onclick="window.location.href='/student070/dwes/forms/form-reservations-select-filter.php'">Go to filters</button>
+        <button onclick="window.location.href='/motel-bates/forms/form-reservations-select-filter.php'">Go to filters</button>
       </div>
 
       <h2 class="center"> <?php echo $_POST["status"] ?> </h2>
@@ -64,8 +64,8 @@ include($ROOT . '/student070/dwes/functions/reservation_table_format.php');
               <td><?php echo htmlspecialchars($reservation['total_days']) ?></td>
               <td><?php echo htmlspecialchars($reservation['total_price']) ?></td>
               <td>
-                <a href="/student070/dwes/forms/form-reviews-insert.php?user_id=<?php echo htmlspecialchars($reservation['user_id']); ?>&room_category_id=<?php echo htmlspecialchars($reservation['room_category_id']); ?>">
-                  <img class='icon' src='/student070/dwes/images/reseña.png'>
+                <a href="/motel-bates/forms/form-reviews-insert.php?user_id=<?php echo htmlspecialchars($reservation['user_id']); ?>&room_category_id=<?php echo htmlspecialchars($reservation['room_category_id']); ?>">
+                  <img class='icon' src='/motel-bates/images/reseña.png'>
                 </a>
             </tr>
           <?php } ?>
@@ -76,7 +76,7 @@ include($ROOT . '/student070/dwes/functions/reservation_table_format.php');
   </main>
 
 
-  <?php require($ROOT . '/student070/dwes/footer.php'); ?>
+  <?php require($ROOT . '/motel-bates/footer.php'); ?>
 
 </body>
 
